@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-(1..24).each do |index|
+(1..48).each do |index|
   user = User.new
   user.first_name = Faker::Name.first_name
   user.last_name = Faker::Name.last_name
@@ -18,7 +18,7 @@
   user.country = Faker::Address.country
   user.save
   p "User is created #{user.email}"
-  (1..24).each do |index2|
+  (1..48).each do |index2|
     micropost = Micropost.new
     micropost.message = Faker::Lorem.paragraph
     micropost.user = user
