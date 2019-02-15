@@ -51,12 +51,12 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'annotate'
+  gem 'sqlite3', '~> 1.3.13'
 end
 
 group :production do
 gem 'pg', '~> 0.21'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.13'
 gem 'rails_12factor'
 end
 
