@@ -71,6 +71,6 @@ class MicropostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def micropost_params
-      params.require(:micropost).permit(:message)
+      params.require(:micropost).permit(:message, :user_id)
     end
 end
